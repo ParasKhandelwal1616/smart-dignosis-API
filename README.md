@@ -2,7 +2,7 @@
 
 A RESTful API built with Node.js and Express that leverages Google's Gemini AI to provide preliminary medical condition suggestions based on user-provided symptoms.
 
-## 🚀 Approach
+##  Approach
 
 The project follows a modular architecture designed for scalability and maintainability:
 
@@ -10,7 +10,7 @@ The project follows a modular architecture designed for scalability and maintain
 2.  **Schema-First Data Modeling:** Uses Mongoose to define a structured `Diagnosis` model, ensuring symptoms and their corresponding AI-generated conditions are stored consistently in MongoDB.
 3.  **Security & Stability:** Integrated `helmet` for basic security headers, `cors` for cross-origin resource sharing, and global error handling to prevent server crashes on unexpected failures.
 
-## 🤖 AI Integration
+##  AI Integration
 
 The core "smart" feature is powered by the **Google Generative AI SDK (@google/generative-ai)** using the `gemini-1.5-flash-latest` model.
 
@@ -19,14 +19,14 @@ The core "smart" feature is powered by the **Google Generative AI SDK (@google/g
 - **Parsing Logic:** The service includes a robust extraction layer that cleans the AI's response (removing markdown code blocks) and parses it into a usable JSON object for the frontend/database.
 - **Model Choice:** `gemini-1.5-flash-latest` was selected for its high speed and low latency, making it ideal for real-time diagnosis suggestions.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB (via Mongoose)
 - **AI:** Google Gemini (Generative AI)
 - **Utilities:** Dotenv (Environment Management), Morgan (Logging), Helmet (Security)
 
-## 📖 API Documentation
+##  API Documentation
 
 ### 1. Diagnose Symptoms
 - **URL:** `/diagnose`
@@ -44,7 +44,7 @@ The core "smart" feature is powered by the **Google Generative AI SDK (@google/g
 - **Method:** `GET`
 - **Response:** Returns a list of all previous diagnoses sorted by date (newest first).
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1.  **Install Dependencies:**
     ```bash
